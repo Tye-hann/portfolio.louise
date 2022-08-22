@@ -1,0 +1,309 @@
+
+/*mettre la page a 0 */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(221, 225, 231);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Premiere partie -OK*/
+
+/*le fond */
+.container{ 
+    background-color: rgb(221, 225, 231);
+    width: 100% ;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 100px;
+ }
+
+
+/*image centrale / portrait */
+
+    img{
+        position: absolute;
+        width:200px ;
+        height: 200px; 
+        left: 30%;
+        padding-top: 20px;
+        bottom: 250px;
+        flex-wrap: wrap;
+    }
+
+   /*texte de presentation central*/
+
+    h1{
+        font-size:  90px; /*webd*/
+        font-weight: bold;
+        color: rgb(194, 106, 164);
+        position: absolute;
+        height: 200px;
+        bottom: 20%;
+        left: 50%;
+        top: 30%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    h4{font-size:  90px; /*Louise*/
+        font-weight: bold;
+        color: rgb(194, 106, 164);
+        position: absolute;
+        font-size: 60px;
+        bottom: 60%;
+        left: 50%;
+        top: 45%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    h5{ /*concu par moi*/
+        font-size:  20px;
+        font-weight: bold;
+        /*color: rgb(175, 173, 174);*/
+        color: rgb(46, 45, 46);
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        top: 60%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+
+    .main p{
+        font-size:  17px;
+        font-weight: bold;
+        /*color: rgb(175, 173, 174);*/
+        color: rgb(175, 173, 174);
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        top: 70%;
+
+    }
+
+
+    @media  (max-width:80px){
+        .container{ 
+            flex-direction: column;
+            height: auto;
+         }
+        
+        
+    }
+
+
+
+
+    
+ 
+/*Les icones reseau sociaux*/
+
+.reseau{
+    position:absolute;
+    text-align: center;
+    bottom: 38%;
+    
+}
+
+.reseau i {
+    color: rgb(105, 105, 105);
+    margin: 10px 160px;
+    font-size: 30px;
+}
+  
+
+ /*Boite ou il y a a propos , pottfolio , contact */
+header nav{
+   position: absolute;
+   text-align: right;
+   top: 0;
+   width: 100%;
+   
+
+}
+
+header nav li{
+list-style: none; /* enelver les points */
+display: inline-block; /* affichage horizontale */
+padding: 20px;
+margin: 30px;
+outline: none;
+
+
+}
+
+
+
+/*uniquement le texte du haut ( portfolio...)*/
+
+nav a{
+    color: rgb(175, 173, 174);
+    font-weight: bold
+    
+}
+
+
+/*animation du texte */
+.rocky ul li a:hover{
+    color: rgb(194, 106, 164);
+    transition: all 2s;
+}
+
+
+
+/*Deuxieme partie
+ce que je sais faire*/
+
+.resume{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 600px;
+    padding: 40px;
+    margin-top: 570px;
+    
+}
+
+#exp{
+
+    font-size: 40px;
+    color: rgb(175, 173, 174);
+    position: absolute;
+    bottom: 60%;
+    left: 8%;
+    top: 100%;
+    
+    
+}
+
+.item{
+   
+    border: 1px solid rgb(255, 175, 255);
+    background-color: rgb(221, 225, 231) ;
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    margin: 20px  ; /*ecart entre les blocks*/
+    padding: 25px 40px; /*ecart a l'interieur de chaque blocks */
+    width: 320px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+    
+}
+
+
+
+
+.item p{
+    color: rgb(105, 105, 105);
+    font-family: 'neutrons', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.item h2{
+    color: rgb(194, 106, 164);
+    top: 8%;
+    padding: 7%;
+    
+}
+
+
+
+
+
+/*footer*/
+footer{
+    background-color :rgb(105, 105, 105);
+    width: 100%;
+    padding-top: 90px;
+    color: aliceblue;
+    position: relative;
+    bottom: -300px;
+    font-family: 'police/neutrons', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -60px;
+    font-size: 30px;
+}
+
+
+
+
+
+/*footer*/
+
+.footer_content h2 {
+    color: rgb(175, 173, 174);
+    position: relative;
+    bottom: 50px;
+   
+}
+
+
+.footer_content i {
+    margin: 30px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

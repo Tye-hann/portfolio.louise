@@ -1,0 +1,194 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(221, 225, 231);
+    font-size: 15px;
+    font-family: 'dinosaur_3', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/*barre d'outil*/
+header nav{
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+ 
+ }
+
+
+
+ header nav li{
+    list-style: none; /* enelver les points */
+   display: inline-block; /* affichage horizontale */
+   padding: 20px;
+   margin: 30px;
+   color: blanchedalmond;
+   }
+   
+   
+   span{
+       position: absolute;
+       font-size: 40px;
+       color: rgb(175, 22, 22);
+       bottom: 480px;
+       right: 3%;
+       left: 5%;
+      
+   }
+   
+   
+   /*uniquement le texte du haut ( portfolio...)*/
+   
+   nav a{
+       color: aliceblue; /*texte en blanc*/
+       font-weight: bold
+       
+   }
+ 
+
+
+/*ensemble*/
+
+.contact{
+    width:70% ;
+    margin: 50px auto;
+    padding-top: 8%;
+    color: aliceblue;
+}
+
+
+
+.contact h2{
+    top: 20%;
+    padding-left: 6%;
+    font-size: 30px;
+    
+}
+
+.contact p{  
+    padding-top: 5%;
+    padding-bottom: 60px;
+    padding-left: 2%;
+    font-size: 18px;
+    color: rgb(194, 106, 164);
+}
+
+
+/*gauche*/
+.contact_box{
+    background-color: rgb(221, 225, 231) ; 
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    display: flex;
+}
+
+
+
+.contact_left{
+    flex-basis: 70%;
+    padding: 60px 50px;
+}
+
+
+.input_row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.input_row .input_group{
+    flex-basis: 45%;
+
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding-bottom: 5px;
+    color: rgb(100, 100, 105);
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(105, 105, 105);
+    
+}
+
+/* envoi*/
+
+.envoi {
+    padding-top: 10%;
+}
+
+button{
+    background-color:rgb(194, 106, 164);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 40px;
+    top: 10px;
+}
+
+img{
+    width: 180px;
+}
+
+
+
+/*droite*/
+.contact_right{
+    flex-basis: 40%;
+    padding: 40px;
+    background:  rgb(105, 105, 105);;
+    color: aliceblue;
+}
+
+.contact_right p {
+    color: white;
+}
+
+
+/*icone*/
+
+.reseau{
+    display: flex;
+    position: relative;
+    text-align: center;
+    bottom: -20px;
+    left: 80px;
+    
+}
+
+.reseau i {
+    color: beige;
+    margin: 10px;
+    font-size: 20px;
+}
+  
+
+.groupe{
+    padding: 144px 60px;
+    height: 3%;
+    background-image: url('télécharger.jpg');
+    background-position: center;
+    background-size: cover;
+   
+   
+}

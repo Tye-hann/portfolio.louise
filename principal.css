@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+/*onglet */
+
+header nav{
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    
+ 
+ }
+ 
+ header nav li{
+ list-style: none; /* enelver les points */
+ display: inline-block; /* affichage horizontale */
+ padding: 20px;
+ margin: 30px;
+ outline: none;
+ 
+ 
+ }
+
+ 
+nav a{
+    color: rgb(175, 173, 174);
+    font-weight: bold
+    
+}
+
+
+/*animation du texte */
+.rocky ul li a:hover{
+    color: rgb(194, 106, 164);
+    transition: all 2s;
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color :rgb(105, 105, 105);
+    width: 100%;
+    padding-top: 90px;
+    color: aliceblue;
+    position: relative;
+    bottom: -200px;
+    
+}
+
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -60px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.footer_content h2 {
+    color: rgb(175, 173, 174);
+    position: relative;
+    bottom: 50px;
+   
+}
+
+
+.footer_content i {
+    margin: 30px 20px;
+
+}
+
+
+
+

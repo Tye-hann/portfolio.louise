@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(221, 225, 231);
+    font-family: 'dinosaur_3', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+/*onglet cv */
+
+.onglet{
+    display: flex;
+    background-color: #eaeaee;   
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    width: 53%;
+    bottom: 50%;
+    margin: 180px auto;
+    color: aliceblue;
+    justify-content: space-around;
+    border-radius: 5%;
+
+}
+
+.boite{
+
+    display: inline-block; /* affichage horizontale */
+    padding: 20px;
+    margin: 5px;
+    color: rgb(36, 31, 24);
+    background-color: #eaeaee;   
+    border-radius: 8%;
+}
+
+.item{
+   
+    border: 1px solid rgb(255, 175, 255);
+    background-color: rgb(221, 225, 231) ;
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    margin: 20px  ; /*ecart entre les blocks*/
+    padding: 25px 40px; /*ecart a l'interieur de chaque blocks */
+    width: 320px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+   
+   
+}
+
+.item p{
+    color: rgb(105, 105, 105);
+    
+}
+
+.item h2{
+    color: rgb(194, 106, 164);
+    top: 8%;
+    padding: 7%;
+    
+}
+
+
+@media  (max-width:60%){
+    .onglet{
+        
+        width: 13%;
+        
+    }
+}
+
+
+/* education/ professionnel*/
+
+
+
+
+.pop{
+    border: 1px ;
+    background-color: rgb(221, 225, 231) ;
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    padding: 30px 3%; 
+     
+    
+}
+
+.pop h2{
+    padding-bottom: 3px;
+    color: rgb(105, 105, 105);
+
+}
+
+.pop h4{
+    padding-bottom: 16px;
+    color: rgb(194, 106, 164);
+    
+}
+
+
+.cv{
+    
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows:  repeat(2, 2frx);
+    grid-gap: 20px;
+    padding: 14px 50px;
+    width:60% ;
+    margin: -160px auto;
+    color: aliceblue;
+     
+     
+}
+ 
+
+
+
+
+
+
+/*footer*/
+
+.footer_content h2 {
+    position: relative;
+    bottom: 50px;
+   
+}
+
+
+.footer_content i {
+    margin: 30px 20px;
+
+}
+

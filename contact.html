@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contacte.css">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="principal.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="rocky">
+            
+        <nav>
+          <ul>
+            <li> <a href="index.html">ACCUEIL</a></li>
+            <li> <a href="cv.html">A PROPOS DE MOI</a></li>
+            <li> <a href="portfolio.html">PORTFOLIO</a></li>
+            <li> <a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+    <div class="contact"><!--toute l'espace-->
+        
+        <h2>Contacter moi</h2><!--entete-->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Incidunt, sequi eveniet. Possimus, mollitia sapiente? 
+         Repellat aperiam nisi quaerat eos a ipsa deserunt? Odit iusto 
+         quas
+         accusantium placeat in architecto laborum!
+        </p>
+
+         <!--a l'interieur de la boite contacte-->
+        <div class="contact_box">
+
+            <div class="contact_left"><!--cote gauche-->
+
+
+                <form onsubmit="sendEmail(); reset(); return false"> 
+                    
+                    <div class="input_row">
+                        <div class="input_group">
+                            <label > Nom</label>
+                            <input type="text" placeholder="John">
+                        </div>
+                        <div class="input_group">
+                            <label > Numéro de télephone</label>
+                            <input type="text" placeholder="01 66 76 76 76s">
+                   
+                        </div>
+                    </div>
+
+                    <div class="input_row">
+                        <div class="input_group">
+                            <label > Mail</label>
+                            <input type="text" placeholder="Johnamendo@gmail.fr">
+                        </div>
+                        <div class="input_group">
+                            <label > objet</label>
+                            <input type="text" placeholder="Taper ici votre message">
+                         </div>
+                     </div>
+
+                    <label> Message</label>
+
+                    <textarea  rows="5" placeholder="your message"></textarea>
+                    <div class="envoi">
+
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+                
+            </div>
+ 
+<!--email-->
+            <script src=" https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "adoukolouise2001@gmail.com",
+                        Password : "password",
+                        To : 'adoukolouise2001@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : "nouveau contact",
+                        Body : "And this is the body"
+                    }).then(
+                    message => alert(message)
+                    );
+
+                }
+            </script>
+
+
+
+
+<!--droite-->
+            <div class="contact_right">
+                <div class="groupe dess">1</div>
+                
+                <p>Lorem ipsum dolor sit amet, at nesciunt fugiat corporis atque 
+                    totam unde nisi sunt, facere, tempore culpa repudiandae?
+                </p>
+                
+
+                <div class="reseau">
+    
+                    <div class="instagram">
+                       <i class="fa-brands fa-instagram"></i>
+                    </div>
+                      
+                    <div class="linkedin">
+                       <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                
+                    <div class="tiktok">
+                       <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                      
+                 </div>
+                
+            
+            </div>
+
+
+
+         </div>
+
+     </div> 
+
+
+     
+  <!--footer-->
+  <footer>
+    <div class="footer_content">
+      <h2> Abonnez-vous</h2>
+      <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ex, veritatis commodi accusantium placeat libero nesciunt quia incidunt doloribus? Quibusdam, quam dolore. Deleniti ipsa ratione odit nisi. Sit, tempora omnis.</p>
+      <ul class="social">
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-linkedin-in"></i></li>
+        <li><i class="fa-brands fa-tiktok"></i></li>
+  
+      </ul>
+    </div>
+    <div class="footer_bottom">
+      <p>Louise Adouko &copy;2022 Condition générale / Politique de confidentialité  </p>
+    </div>
+
+</body>
+</html>

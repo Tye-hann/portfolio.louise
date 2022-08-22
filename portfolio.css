@@ -1,0 +1,208 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(221, 225, 231);
+    font-family: 'dinosaur_3', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/*Portfolio*/
+.portfolio1{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:  repeat(5, 1frx);
+    grid-gap: 16px;
+    padding: 184px 40px;
+    
+}
+
+.groupe1{
+    grid-row: span 18 ;
+    grid-column: span 1;/*zoom*/
+}
+
+.groupe2{
+    grid-row: span 38 ;
+    grid-column: span 2;
+}
+
+.groupe3{
+    grid-row: span 25 ;
+    grid-column: span 2;
+}
+
+.immersive{
+    background-image: url('immersive.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.flute{
+    background-image: url('flutee.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.pocaa{
+    background-image: url('pocaa.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.poca33{
+    background-image: url('poca33.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.fiction1{
+    background-image: url('fiction1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.voyage{
+    background-image: url('voyage.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.jus{
+    background-image: url('jus.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.soleil{
+    background-image: url('soleil.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.ginger{
+    background-image: url('ginger.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.fraise{
+    background-image: url('fraise.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.sirop{
+    background-image: url('sirop.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+/*image*/
+.i{
+    background-image: url('2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.j{
+    background-image: url('Pinterest.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.dess{
+    background-image: url('illustrator/dess3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.dess3{
+    background-image: url('adobe/photoshop/poster.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+.groupe{
+    background-color: rgb(117, 48, 88);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   
+}
+
+
+/*footer*/
+
+
+/*footer*/
+footer{
+    background:  rgb(105, 105, 105);;
+    width: 100%;
+    padding-top: 90px;
+    color: aliceblue;
+    position: relative;
+    bottom: -600px;
+    
+}
+
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -60px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.footer_content h2 {
+    position: relative;
+    bottom: 50px;
+   
+}
+
+
+.footer_content i {
+    margin: 30px 20px;
+
+}
+

@@ -1,0 +1,314 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(221, 225, 231);
+    font-family: 'dinosaur_3', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Boite ou il y a a propos , pottfolio , contact */
+header nav{
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    
+ 
+ }
+ 
+ header nav li{
+ list-style: none; /* enelver les points */
+ display: inline-block; /* affichage horizontale */
+ padding: 20px;
+ margin: 30px;
+ outline: none;
+ 
+ 
+ }
+ 
+ 
+ 
+ /*uniquement le texte du haut ( portfolio...)*/
+ 
+ nav a{
+     color: rgb(175, 173, 174);
+     font-weight: bold
+     
+ }
+ 
+ /*animation du texte */
+.rocky ul li a:hover{
+    color: rgb(194, 106, 164);
+    transition: all 2s;
+}
+
+
+/*footer*/
+
+.footer_content h2 {
+    color: rgb(175, 173, 174);
+    position: relative;
+    bottom: 50px;
+   
+}
+
+
+.footer_content i {
+    margin: 30px 20px;
+
+}
+
+
+
+
+/*2eme partie*/
+.onglet{
+    display: flex;
+   
+    background-color: #eaeaee;   
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    width: 53%;
+    bottom: 50%;
+    margin: 180px auto;
+    color: aliceblue;
+    justify-content: space-around;
+    border-radius: 5%;
+
+}
+
+.boite{
+
+    display: inline-block; /* affichage horizontale */
+    padding: 20px;
+    margin: 5px;
+    color: rgb(36, 31, 24);
+    background-color: #eaeaee;   
+    border-radius: 8%;
+}
+
+.item{
+   
+    border: 1px solid rgb(255, 175, 255);
+    background-color: rgb(221, 225, 231) ;
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    margin: 20px  ; /*ecart entre les blocks*/
+    padding: 25px 40px; /*ecart a l'interieur de chaque blocks */
+    width: 320px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+   
+   
+}
+
+.item p{
+    color: rgb(105, 105, 105);
+    
+}
+
+.item h2{
+    color: rgb(194, 106, 164);
+    top: 8%;
+    padding: 7%;
+    
+}
+
+
+
+
+
+/*les competences*/
+.skills_section{
+    width: 53%;
+    margin: -160px auto;
+    padding: 30px 3%;
+    box-shadow: rgb(254, 254, 255) -3px -4px 7px ,3px 3px 5px rgba(128, 119, 119, 0.959);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color:rgb(105, 105, 105);
+}
+.skills_head h6{
+    font-size: 30px;
+    margin-bottom: 19px;
+    color: rgb(175, 173, 174);
+}
+
+
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20px;
+}
+
+
+
+.skill_bar .info p:nth-child(2){ /*a savoir*/
+
+    font-weight: 500;
+}
+
+
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color:  rgb(232, 236, 243);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color:rgb(194, 106, 164);
+    border-radius: 25px;
+    top: 1px;
+    left: 1px;
+}
+.skill_bar .bar .html{
+    width: 50%;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .css{
+    width: 50%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .illustrator{
+    width: 50%;
+    animation: illustrator 2s;
+}
+@keyframes illustrator {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .js{
+    width: 10%;
+    animation: js 1s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 10%;
+    }
+}
+.skill_bar .bar .react{  /*ohotoshop*/
+    width: 50%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .node{
+    width: 10%;
+    animation: node 2s;
+}
+@keyframes node { /*after*/
+    0%{
+        width: 0%;
+    }100%{
+        width: 10%;
+    }
+}
+.skill_bar .bar .express{/*indesign*/
+    width: 30%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 30%;
+    }
+}
+.skill_bar .bar .photoshop{ /*ux*/
+    width: 10%;
+    animation: photoshop 2s;
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }100%{
+        width: 10%;
+    }
+}
+
+
+
+/*footer*/
+footer{
+    background:  rgb(105, 105, 105);;
+    width: 100%;
+    padding-top: 90px;
+    color: aliceblue;
+    position: relative;
+    bottom: -600px;
+    
+}
+
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -60px;
+    font-size: 30px;
+}
